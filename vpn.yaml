@@ -1,0 +1,20 @@
+proxies:
+  - name: "VPN"
+    type: vless
+    server: vpn.dembot.site
+    port: 443
+    uuid: 306a63b2-6665-4601-8521-40ae723dbd9d
+    network: tcp
+    tls: true
+    udp: true
+    skip-cert-verify: true
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - VPN
+      - DIRECT
+
+rules:
+  - MATCH,PROXY
