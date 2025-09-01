@@ -13,7 +13,7 @@ dns:
     - 8.8.8.8
 
 proxies:
-  - name: "VPN"
+  - name: "HELLO NIKITA EPTA"
     type: vless
     server: vpn.dembot.site
     port: 443
