@@ -18,11 +18,3 @@ proxy-groups:
 
 rules:
   - MATCH,PROXY
-
-tun:
-  enable: true
-  stack: system
-  dns-hijack:
-    - any:53
-  auto-route: true
-  auto-detect-interface: true
